@@ -10,8 +10,8 @@ org $C0CABF ;dungeon
 org $C0CBC8 ;world map
  jml force_encounter_world ;cmp $16a9
 							;bcs c0cc20
-
-org $FAF000
+							
+org $FAF220
 force_encounter:
  pha
  lda $02 ;start_button_pressed
@@ -25,7 +25,7 @@ start_not_pressed:
  
  
 ;UNCOMMENT THIS FOR NO START = NO ENCOUNTERS
- lda #$0000 ; no start = no encounters
+; lda #$0000 ; no start = no encounters
 ;END COMMENT ZONE
 
 
@@ -49,8 +49,8 @@ start_not_pressed_world:
  
  
 ;COMMENT THESE OUT FOR NO START = NO ENCOUNTERS
-; cmp $16A9
-; bcc do_encounter_world 
+ cmp $16A9
+ bcc do_encounter_world 
 ;END COMMENT ZONE
 
 ;else
