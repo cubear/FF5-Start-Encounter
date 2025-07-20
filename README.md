@@ -1,5 +1,5 @@
 # FF5-Start-Encounter
-A mod for FF5 (SNES) to force encounters by pressing the start button. Start held down.
+A mod for FF5 (SNES) to force encounters by pressing the start button.
 
 
 Start_Encounter leaves the encounter rate as per normal, with encounters forced by pressing start.
